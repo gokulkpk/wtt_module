@@ -1,0 +1,32 @@
+{
+ "custom_fields": [],
+ "custom_perms": [],
+ "doctype": "Journal Entry Account",
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2021-07-31 10:30:38.407038",
+   "default_value": null,
+   "doc_type": "Journal Entry Account",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "party",
+   "idx": 0,
+   "modified": "2021-07-31 10:30:38.407038",
+   "modified_by": "Administrator",
+   "name": "Journal Entry Account-party-columns",
+   "owner": "Administrator",
+   "parent": null,
+   "parentfield": null,
+   "parenttype": null,
+   "property": "columns",
+   "property_type": "Int",
+   "row_name": null,
+   "value": "1"
+  }
+ ],
+ "sync_on_migrate": 1
+}

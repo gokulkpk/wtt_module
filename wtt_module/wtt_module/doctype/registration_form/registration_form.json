@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-01-19 09:47:02.727539",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "applying_for_the_post",
+  "other",
+  "name1",
+  "fathers_name",
+  "qualification",
+  "email",
+  "mobile_no_1",
+  "mobile_no_2",
+  "years_of_experience",
+  "resume"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "JOB-REG-.YYYY.-"
+  },
+  {
+   "fieldname": "applying_for_the_post",
+   "fieldtype": "Select",
+   "label": "Applying for the post",
+   "options": "-- Select --\nAdministration\nAccounts\nData Entry\nHuman Resources\nEDP/IT\nERP\nProcess\nProposal\nDesign - Civil\nDesign - Mechanical\nDesign - Electrical\nPLC Programmer\nTechnician Trainee (ITI/Diploma)\nTrainee (B.E/M.E - with arrears)\nGraduate Trainee (Arts & Science All Streams)\nGraduate Engineer Trainee(B.E/M.E (Completed/Without Arrears)\nFabrication/Shop Floor Engineer\nProject - Head\nProject - Mechanical\nProject - Electrical\nFitter\nWelder\nPipe Fitter\nTIG Welder\nLab Chemist\nOperator\nFlow Control\nShift Incharge\nAssistant Plant Manager\nPlant Manager\nMaintenance Engineer\nMaintenance Technician - Mechanical\nMaintenance Technician - Electrical\nOthers"
+  },
+  {
+   "depends_on": "eval:(doc.applying_for_the_post==\"Others\");",
+   "fieldname": "other",
+   "fieldtype": "Data",
+   "label": "Other"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "fathers_name",
+   "fieldtype": "Data",
+   "label": "Father's Name"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Data",
+   "label": "Qualification"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "mobile_no_1",
+   "fieldtype": "Data",
+   "label": "Mobile No 1"
+  },
+  {
+   "fieldname": "mobile_no_2",
+   "fieldtype": "Data",
+   "label": "Mobile No 2"
+  },
+  {
+   "fieldname": "years_of_experience",
+   "fieldtype": "Select",
+   "label": "Years of Experience",
+   "options": "0\n1\n2\n3\n4\n5\n5 and above"
+  },
+  {
+   "fieldname": "resume",
+   "fieldtype": "Attach",
+   "label": "Resume"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-28 11:31:40.540747",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Registration Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

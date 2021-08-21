@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "creation": "2021-07-21 14:59:35.312301",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "description",
+  "item_group",
+  "qty",
+  "stock_uom",
+  "rate",
+  "amount",
+  "item_tax_template",
+  "supplier_description"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item name"
+  },
+  {
+   "columns": 3,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item group",
+   "options": "Item Group"
+  },
+  {
+   "columns": 1,
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quality"
+  },
+  {
+   "fieldname": "stock_uom",
+   "fieldtype": "Link",
+   "label": "Stock UOM",
+   "options": "UOM"
+  },
+  {
+   "columns": 1,
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate"
+  },
+  {
+   "columns": 1,
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "columns": 1,
+   "fieldname": "item_tax_template",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item tax template",
+   "options": "Item Tax Template"
+  },
+  {
+   "columns": 1,
+   "fieldname": "supplier_description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Supplier Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-07-21 15:01:52.965980",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Supplier Data",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

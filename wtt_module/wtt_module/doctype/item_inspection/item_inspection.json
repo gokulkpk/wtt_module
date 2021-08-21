@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-07-14 09:52:15.386985",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "report_date",
+  "inspection_type",
+  "material_series",
+  "column_break_5",
+  "receipt_series",
+  "supplier",
+  "company",
+  "s_warehouse",
+  "section_break_10",
+  "items",
+  "total_qty",
+  "total",
+  "inspected_by",
+  "verified_by",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "MAT-IN-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Report Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "inspection_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Inspection Type",
+   "options": "\nIncoming\nOutgoing\nIn Process",
+   "reqd": 1
+  },
+  {
+   "fieldname": "material_series",
+   "fieldtype": "Data",
+   "label": "Material Series"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "receipt_series",
+   "fieldtype": "Data",
+   "label": "Receipt Series"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "s_warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Item Inspection item",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "label": "Total Quantity",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "inspected_by",
+   "fieldtype": "Link",
+   "label": "Inspected By",
+   "options": "User"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Data",
+   "label": "Verified By"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Item Inspection",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-07-22 12:11:07.733580",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Item Inspection",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "creation": "2021-07-22 12:08:58.590438",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "description",
+  "qty",
+  "acc_qty",
+  "rate",
+  "ins_status",
+  "amount",
+  "uom",
+  "item_name",
+  "item_group",
+  "conversion_factor",
+  "stock_qty",
+  "stock_uom",
+  "reason_for_rejection",
+  "s_warehouse"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item code",
+   "options": "Item"
+  },
+  {
+   "columns": 3,
+   "fetch_from": "item_code.description",
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "columns": 1,
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "columns": 1,
+   "fieldname": "acc_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Accepted Quantity"
+  },
+  {
+   "columns": 1,
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "ins_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Inspection Status",
+   "options": "--Select--\nAccepted\nRejected"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fetch_from": "item_code.stock_uom",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fetch_from": "item_code.item_group",
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "conversion_factor",
+   "fieldtype": "Float",
+   "label": "UOM Conversion Factor"
+  },
+  {
+   "fieldname": "stock_qty",
+   "fieldtype": "Float",
+   "label": "Stock Qty"
+  },
+  {
+   "fieldname": "stock_uom",
+   "fieldtype": "Link",
+   "label": "Stock UOM",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "eval:(doc.ins_status==\"Rejected\");",
+   "fieldname": "reason_for_rejection",
+   "fieldtype": "Long Text",
+   "label": "Reason for rejection",
+   "mandatory_depends_on": "eval:(doc.ins_status==\"Rejected\");"
+  },
+  {
+   "fieldname": "s_warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-07-22 15:18:34.330896",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Item Inspection item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
